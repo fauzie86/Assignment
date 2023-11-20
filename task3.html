@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+
+<body>
+
+    <script>
+        
+        function reverseString(str) {
+
+            let newString = ""; //define empty string
+            for (let i = str.length - 1; i >= 0; i--) {  //i.str.length = user input length //while i >=0 it will keep loop // i-- do it in reverse way example 7 6 5 4 3 2 1
+                newString += str[i];  //take each character in put into an array and combine them for each round of loop
+            }
+            return newString;  //result string of a complete loop
+        }
+
+        const string = prompt('Enter a string: '); // user input
+
+        const result = reverseString(string); //run function
+        
+        console.log("AHA YOU FOUND ME, your reversed string is "+ result); //print result to console log
+        document.write("EMPTY HERE??CHECK OUT THE CONSOLE LOG!")
+
+    </script>
+</body>
+
+</html>
